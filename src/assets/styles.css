@@ -1,0 +1,87 @@
+/* magassians test */
+body, html {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: Arial;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .search {
+  width: calc(100% - 30px);
+  max-width: 810px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 0;
+  position: relative;
+}
+
+.container .search h3 {
+  display: block;
+  font-size: 72px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container .search input {
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 36px;
+  padding: 0 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: calc(100% - 30px);
+  max-width: 900px;
+  margin-bottom: 90px;
+  outline: none;
+  transition: all .6s ease;
+}
+
+.container .search input:hover, .container .search input:focus {
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.container .search .results {
+  position: absolute;
+  top: 250px;
+  left: 15px;
+  display: block;
+  list-style-type: none;
+  width: calc(100% - 30px);
+  padding-left: 0;
+  line-height: 36px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 0;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.container .search .results li {
+  cursor: pointer;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: all .6s ease;
+}
+
+.container .search .results li:hover, .container .search .results li.selected {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.container .search .results li span {
+  float: right;
+  opacity: .1;
+}
+
+.container .copy {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  opacity: .1;
+  font-size: 13px;
+}
